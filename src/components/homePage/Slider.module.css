@@ -1,0 +1,22 @@
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.swiperSlide {
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 300px;
+}
+
+.swiperSlide img {
+  display: block;
+  width: 100%;
+}
+
+.swiperSlideActive img {
+  transform: scale(1.8);
+  opacity: 1;
+}
