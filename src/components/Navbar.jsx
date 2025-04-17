@@ -39,14 +39,14 @@ const Navbar = () => {
     <nav
       className={
         navColor
-          ? "w-full py-4 px-10 flex justify-between lg:justify-between items-center fixed top-0 left-0 right-0 z-10 text-black drop-shadow-lg  duration-200 ease-in bg-[var(--primary-yellow)] "
-          : "w-full py-4 px-10 flex justify-between lg:justify-between items-center fixed top-0 left-0 right-0 z-10 text-black drop-shadow-lg transparent  duration-200 ease-out "
+          ? "w-full py-4 px-4 lg:px-10 flex justify-between lg:justify-between items-center fixed top-0 left-0 right-0 z-10 text-black drop-shadow-lg  duration-200 ease-in bg-[var(--primary-yellow)] "
+          : "w-full py-4 px-4 lg:px-10 flex justify-between lg:justify-between items-center fixed top-0 left-0 right-0 z-10 text-black drop-shadow-lg transparent  duration-200 ease-out "
       }
     >
       <NavLink to="/">
         <img
           src={jfiLogo}
-          className="w-[200px] h-auto cursor-pointer"
+          className="w-[200px] h-auto cursor-pointer "
           alt="Logo"
         />
       </NavLink>
