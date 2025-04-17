@@ -17,6 +17,15 @@ import aImported from "../../assets/pCategories/aImported.svg";
 
 import allProducts from "./AllProducts.js";
 
+// Import Swiper styles
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cards";
+
+// import required modules
+import { Navigation } from "swiper/modules";
+import "swiper/css/navigation";
+
 const Product = () => {
   const [activeCategory, setActiveCategory] = useState("AllProduct");
 
@@ -42,59 +51,95 @@ const Product = () => {
       style={{ backgroundImage: `url(${bgSnack})` }}
     >
       <div className="flex justify-center items-center pt-10">
-        <div className="flex flex-row bg-[var(--primary-yellow)] p-2 sm:p-5 rounded-xl gap-x-5 sm:gap-x-10 md:gap-x-10 cursor-pointer sm:px-10 lg:px-15">
-          <div>
+        <Swiper
+          modules={[Navigation]}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            clickable: true,
+          }}
+          grabCursor={true}
+          breakpoints={{
+            320: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 5,
+              spaceBetween: 25,
+            },
+          }}
+          className="w-full max-w-[90vw] lg:max-w-[800px] bg-[var(--primary-yellow)] rounded-2xl px-4"
+        >
+          <SwiperSlide>
             <img
               src={activeCategory === "AllProduct" ? aAllProduct : dAllProduct}
-              className="w-[50px] sm:w-[70px] md:w-[90px] hover:scale-120 duration-300"
+              className="w-[50px] sm:w-[70px] md:w-[90px] hover:scale-110 duration-300 py-5 cursor-pointer mx-auto"
               alt=""
               onClick={() => setActiveCategory("AllProduct")}
             />
-          </div>
+          </SwiperSlide>
 
-          <img
-            src={activeCategory === "Snacks" ? aSnacks : dSnacks}
-            className="w-[50px] sm:w-[70px] lg:w-[90px] hover:scale-120 duration-300"
-            alt=""
-            onClick={() => setActiveCategory("Snacks")}
-          />
+          <SwiperSlide>
+            <img
+              src={activeCategory === "Snacks" ? aSnacks : dSnacks}
+              className="w-[50px] sm:w-[70px] md:w-[90px] hover:scale-110 duration-300 py-5 cursor-pointer mx-auto"
+              alt=""
+              onClick={() => setActiveCategory("Snacks")}
+            />
+          </SwiperSlide>
 
-          <img
-            src={activeCategory === "BnW" ? aBnW : dBnW}
-            className="w-[50px] sm:w-[70px] lg:w-[90px] hover:scale-120 duration-300"
-            alt=""
-            onClick={() => setActiveCategory("BnW")}
-          />
+          <SwiperSlide>
+            <img
+              src={activeCategory === "BnW" ? aBnW : dBnW}
+              className="w-[50px] sm:w-[70px] md:w-[90px] hover:scale-110 duration-300 py-5 cursor-pointer mx-auto"
+              alt=""
+              onClick={() => setActiveCategory("BnW")}
+            />
+          </SwiperSlide>
 
-          <img
-            src={
-              activeCategory === "Confectionery"
-                ? aConfectionery
-                : dConfectionery
-            }
-            className="w-[50px] sm:w-[70px] lg:w-[90px] hover:scale-120 duration-300"
-            alt=""
-            onClick={() => setActiveCategory("Confectionery")}
-          />
+          <SwiperSlide>
+            <img
+              src={
+                activeCategory === "Confectionery"
+                  ? aConfectionery
+                  : dConfectionery
+              }
+              className="w-[50px] sm:w-[70px] md:w-[90px] hover:scale-110 duration-300 py-5 cursor-pointer mx-auto"
+              alt=""
+              onClick={() => setActiveCategory("Confectionery")}
+            />
+          </SwiperSlide>
 
-          <img
-            src={activeCategory === "Imported" ? aImported : dImported}
-            className="w-[50px] sm:w-[70px] lg:w-[90px] hover:scale-120 duration-300"
-            alt=""
-            onClick={() => setActiveCategory("Imported")}
-          />
-        </div>
+          <SwiperSlide>
+            <img
+              src={activeCategory === "Imported" ? aImported : dImported}
+              className="w-[50px] sm:w-[70px] md:w-[90px] hover:scale-110 duration-300 py-5 cursor-pointer mx-auto"
+              alt=""
+              onClick={() => setActiveCategory("Imported")}
+            />
+          </SwiperSlide>
+
+          <div className="swiper-button-prev !text-[var(--primary-blue)]"></div>
+          <div className="swiper-button-next !text-[var(--primary-blue)]"></div>
+        </Swiper>
       </div>
+
       <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl  text-center my-5 md:my-10">
         {categoryTitles[activeCategory]}
       </h1>
-      <div className="w-full flex justify-center text-black ">
-        <div className="grid grid-cols-2 md:grid-cols-3  gap-5 lg:gap-10  py-10 ">
+      <div className="w-full flex justify-center text-black px-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-10  py-10 ">
           {products[activeCategory].length > 0 ? (
             products[activeCategory].map((item) => (
               <div
                 key={item.name}
-                className="bg-white p-4 text-center shadow rounded-xl w-[150px] sm:w-[300px] md:w-[230px] lg:w-[300px] xl:w-[370px] cursor-pointer
+                className="bg-white p-4 text-center shadow rounded-xl w-full   cursor-pointer
                 duration-300 hover:scale-105 relative "
               >
                 <img

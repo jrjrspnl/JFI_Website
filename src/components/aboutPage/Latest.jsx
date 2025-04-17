@@ -12,7 +12,9 @@ const Latest = () => {
   return (
     <div className="w-full h-[600px] bg-[var(--primary-blue)] text-center relative px-5">
       <div data-aos="slide-up" data-aos-duration="600">
-        <h1 className="py-15">Discover Our Newest Product</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl py-15">
+          Discover Our Newest Product
+        </h1>
         <Swiper
           modules={[Navigation]}
           navigation={{

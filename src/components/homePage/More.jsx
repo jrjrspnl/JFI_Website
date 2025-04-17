@@ -20,7 +20,7 @@ import "swiper/css/pagination";
 
 const More = () => {
   return (
-    <div className="w-full min-h-screen bg-[var(--primary-blue)] text-white px-4 relative pb-40 md:pb-70">
+    <div className="overflow-x-hidden w-full min-h-screen bg-[var(--primary-blue)] text-white px-4 relative pb-40 md:pb-70">
       <div
         className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between pt-10 md:pt-20 gap-10"
         data-aos="fade-right"
@@ -28,13 +28,13 @@ const More = () => {
       >
         {/* Text Section */}
         <div className=" md:w-1/2  justify-center items-center mx-3">
-          <h1 className=" text-yellow-200 text-4xl sm:text-6xl lg:text-7xl text-center lg:text-left">
+          <h1 className=" text-yellow-200 text-5xl sm:text-6xl lg:text-7xl text-center lg:text-left">
             HEAR MORE FROM US
           </h1>
           <p className="lg:text-left py-5 text-medium md:text-lg font-semibold text-center">
             May 19, 2022
           </p>
-          <p className="lg:max-w-lg font-medium mb-10 ">
+          <p className="lg:max-w-lg font-medium mb-10 text-center md:text-left">
             From Campus to Career: NU Baliwag Students Get a Taste of Real-World
             Success with Jocker’s Foods!
             <br />
@@ -53,7 +53,7 @@ const More = () => {
         </div>
 
         {/* Swiper Section */}
-        <div className="flex justify-center items-center">
+        <div className="md:w-1/2 flex justify-center items-center">
           <Swiper
             effect={"cards"}
             initialSlide={2}
@@ -66,7 +66,7 @@ const More = () => {
               clickable: true,
             }}
             modules={[EffectCards, Pagination, Autoplay]}
-            className="mySwiper w-[250px] h-[300px] sm:w-[280px] sm:h-[380px] lg:w-[300px] lg:h-[400px]"
+            className="mySwiper w-[220px] h-[300px] sm:w-[280px] sm:h-[380px] lg:w-[300px] lg:h-[400px]"
           >
             <SwiperSlide>
               <img
