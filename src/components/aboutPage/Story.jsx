@@ -19,7 +19,7 @@ const Story = () => {
           <h1 className="text-5xl sm:text-7xl text-[var(--primary-yellow)] lg:text-left">
             OUR STORY
           </h1>
-          <div className="mt-5 text-sm sm:text-base  text-justify  xl:text-left space-y-4">
+          <div className="mt-5 font-medium text-sm sm:text-base text-justify xl:text-left space-y-4">
             <p>
               Jocker’s Food Industries (JFI) was founded in 1992 with a vision
               to bring high-quality and affordable snack foods to Filipino
