@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center px-5  max-w-lg lg:max-w-full gap-x-10 sm:mt-20 lg:mt-0">
         <img
           src={charMikMik}
-          className="lg:mt-30 w-[300px] sm:w-[400px] md:w-[500px]   xl:w-[600px]"
+          className="lg:mt-30 w-[300px] sm:w-full md:w-[500px]   xl:w-[600px]"
           alt=""
         />
         <h1

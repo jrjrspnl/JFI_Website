@@ -8,7 +8,7 @@ const Quote = () => {
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
-        <p className="text-3xl md:text-5xl text-center md:text-center   leading-relaxed font-bold pt-5 ">
+        <p className="text-xl sm:text-3xl md:text-5xl text-center md:text-center   leading-relaxed font-bold pt-5 ">
           Snacking{" "}
           <span className="text-[var(--primary-yellow)]">made better</span>,
           <br />

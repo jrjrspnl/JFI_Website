@@ -81,7 +81,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "absolute left-0 top-0 bg-[var(--primary-yellow)] w-full  lg:hidden duration-200 ease-in-out  "
+            ? "absolute left-0 top-0 bg-[var(--primary-yellow)] w-full lg:hidden duration-200 ease-in-out  "
             : "absolute bottom-[100%]  "
         }
       >
@@ -90,16 +90,24 @@ const Navbar = () => {
         <div className="flex justify-center items-center py-5 pb-10 font-medium">
           <ul className="w-full text-center px-5">
             <li className="border-b-2 p-4">
-              <Link to="/">HOME</Link>
+              <Link to="/" onClick={handleNav}>
+                HOME
+              </Link>
             </li>
             <li className="border-b-2 p-4">
-              <Link to="/about">ABOUT</Link>
+              <Link to="/about" onClick={handleNav}>
+                ABOUT
+              </Link>
             </li>
             <li className="border-b-2 p-4">
-              <Link to="/product">PRODUCTS</Link>
+              <Link to="/product" onClick={handleNav}>
+                PRODUCTS
+              </Link>
             </li>
             <li className="p-4">
-              <Link to="/contact-us">CONTACT US</Link>
+              <Link to="/contact-us" onClick={handleNav}>
+                CONTACT US
+              </Link>
             </li>
             <div className="flex justify-center flex-row gap-x-5">
               <img
