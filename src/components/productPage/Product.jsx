@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import bgSnack from "../../assets/backgroundImages/bgSnack.png";
-import wave7 from "../../assets/Waves/wave7.svg";
+import wave7 from "../../assets/Waves/Wave7.svg";
 // Dark (gray) icons
 import dAllProduct from "../../assets/pCategories/dAllProducts.svg";
 import dSnacks from "../../assets/pCategories/dSnacks.svg";
