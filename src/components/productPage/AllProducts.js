@@ -11,8 +11,8 @@ import sugoSamgyupsal from "../../assets/AllProducts/sugoSamgyupsal.svg";
 import sugoSalted from "../../assets/AllProducts/sugoSalted.svg";
 import sugoSpicy from "../../assets/AllProducts/sugoSpicy.svg";
 //egg-o
-import eggOButter from "../../assets/AllProducts/egg-OButter.svg";
-import eggOChocolate from "../../assets/AllProducts/egg-OChocolate.svg";
+import eggOButter from "../../assets/AllProducts/egg-oButter.svg";
+import eggOChocolate from "../../assets/AllProducts/egg-oChocolate.svg";
 //choyoyoki
 import choyoWaferSticks from "../../assets/AllProducts/choyoWaferSticks.svg";
 import choyoWaferBites from "../../assets/AllProducts/choyoWaferBites.svg";
