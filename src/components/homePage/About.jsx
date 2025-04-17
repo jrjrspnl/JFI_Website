@@ -51,8 +51,8 @@ const About = () => {
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
-        <h1 className="my-10">About us</h1>
-        <p className="text-sm sm:text-lg  sm:text-center text-justify mb-10 px-5 font-semibold">
+        <h1 className="my-15  ">About us</h1>
+        <p className="text-base sm:text-lg  text-justify sm:text-center mb-5 px-5 font-medium">
           Jocker's Foods Industries (JFI) is a single proprietorship involved
           with the manufacture and distribution of the quality snack foods.
           Established in 1992, JFI has grown to become one of the leading snack
