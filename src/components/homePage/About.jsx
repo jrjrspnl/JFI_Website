@@ -2,7 +2,7 @@ import React from "react";
 import bgBlue from "../../assets/backgroundImages/bgBlue.png";
 import Marquee from "react-fast-marquee";
 import jfiLogo from "../../assets/jfiLogo.png";
-import marqueeMikMiK from "../../assets/marqueeImages/Mik-MiK.png";
+import marqueeMikMiK from "../../assets/marqueeImages/MIK-MIK.png";
 import marqueeChoyoChoyo from "../../assets/marqueeImages/CHOYO-CHOYO.png";
 import marqueePeasO from "../../assets/marqueeImages/PEAS-O.png";
 import marqueeSugo from "../../assets/marqueeImages/SUGO.png";
