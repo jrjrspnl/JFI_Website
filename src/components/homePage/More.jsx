@@ -53,7 +53,7 @@ const More = () => {
         </div>
 
         {/* Swiper Section */}
-        <div className="md:w-1/2 flex justify-center items-center">
+        <div className="flex justify-center items-center">
           <Swiper
             effect={"cards"}
             initialSlide={2}
