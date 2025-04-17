@@ -105,7 +105,12 @@ const More = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <button className="rounded-full w-[250px] border border-[var(--primary-yellow)] bg-[var(--primary-yellow)] text-black text-sm font-semibold py-3 mx-auto md:hidden">
+        <button
+          onClick={() => {
+            window.open("https://www.facebook.com/jockersfoods");
+          }}
+          className="rounded-full w-[250px] border border-[var(--primary-yellow)] bg-[var(--primary-yellow)] text-black text-sm font-semibold py-3 mx-auto md:hidden"
+        >
           CHECK OUR FACEBOOK PAGE
         </button>
       </div>
