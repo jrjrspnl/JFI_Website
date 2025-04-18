@@ -7,7 +7,7 @@ import Wave1 from "../../assets/Waves/Wave1.svg";
 const Story = () => {
   return (
     <div
-      className="w-full min-h-screen bg-white text-black  px-5 py-10 bg-no-repeat bg-cover relative"
+      className="w-full min-h-screen bg-sky-200 text-black  px-5 py-10 bg-no-repeat bg-cover relative"
       style={{ backgroundImage: `url(${bgSnack})` }}
     >
       <div

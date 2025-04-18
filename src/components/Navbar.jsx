@@ -51,7 +51,7 @@ const Navbar = () => {
         />
       </NavLink>
 
-      <ul className="lg:flex hidden cursor-pointer font-medium text-[16px] gap-10 ">
+      <ul className="lg:flex hidden cursor-pointer font-medium text-[16px] gap-2 ">
         <li className="nav-bar">
           <NavLink to="/" style={navlinksActive}>
             HOME
