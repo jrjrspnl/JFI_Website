@@ -5,7 +5,7 @@ import wave7 from "../../assets/Waves/Wave7.svg";
 const Form = () => {
   return (
     <div
-      className="w-full min-h-screen text-[var(--primary-yellow)] bg-sky-200 px-5 sm:px-10  relative pb-30 sm:pb-40 lg:pb-50"
+      className="w-full min-h-screen text-[var(--primary-yellow)]  px-5 sm:px-10  relative pb-30 sm:pb-40 lg:pb-50"
       style={{ backgroundImage: `url(${bgSnack})` }}
     >
       <div className="flex justify-center">

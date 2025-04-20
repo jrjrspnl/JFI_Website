@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const Contact = ({ title }) => {
   return (
-    <div className="w-full h-64 md:h-80 lg:h-[400px] relative">
+    <div className="w-full h-64 md:h-80 lg:h-[400px] bg-sky-200 relative ">
       <img src={bg2} className="w-full h-full object-cover" alt="" />
       <div className="absolute inset-0 flex justify-center items-center">
         <h1 className="text-[var(--primary-dark)] translate-y-5 md:translate-y-0 lg:text-8xl">

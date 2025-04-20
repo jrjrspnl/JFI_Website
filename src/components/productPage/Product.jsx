@@ -47,7 +47,7 @@ const Product = () => {
 
   return (
     <div
-      className="w-full min-h-screen  relative bg-sky-200 pb-50"
+      className="w-full min-h-screen  relative  pb-50"
       style={{ backgroundImage: `url(${bgSnack})` }}
     >
       <div className="flex justify-center items-center pt-10">
