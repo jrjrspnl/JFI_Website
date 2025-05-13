@@ -19,6 +19,14 @@ import { EffectCards, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/pagination";
 
 const More = () => {
+  const images = [
+    { id: 1, image: image1 },
+    { id: 2, image: image2 },
+    { id: 3, image: image3 },
+    { id: 4, image: image4 },
+    { id: 5, image: image5 },
+  ];
+
   return (
     <div className="overflow-x-hidden w-full min-h-screen bg-[var(--primary-blue)] text-white px-4 relative pb-40 md:pb-70">
       <div
@@ -68,41 +76,15 @@ const More = () => {
             modules={[EffectCards, Pagination, Autoplay]}
             className="mySwiper w-[220px] h-[300px] sm:w-[280px] sm:h-[380px] lg:w-[300px] lg:h-[400px]"
           >
-            <SwiperSlide>
-              <img
-                src={image1}
-                className="w-full h-full object-cover rounded-xl "
-                alt=""
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={image2}
-                className="w-full h-full object-cover rounded-xl"
-                alt=""
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={image3}
-                className="w-full h-full object-cover rounded-xl "
-                alt=""
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={image4}
-                className="w-full h-full object-cover rounded-xl"
-                alt=""
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={image5}
-                className="w-full h-full object-cover rounded-xl "
-                alt=""
-              />
-            </SwiperSlide>
+            {images.map((image) => (
+              <SwiperSlide key={image.id}>
+                <img
+                  src={image.image}
+                  className="w-full h-full object-cover rounded-xl "
+                  alt=""
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
         <button

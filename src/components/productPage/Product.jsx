@@ -74,7 +74,7 @@ const Product = () => {
               spaceBetween: 25,
             },
           }}
-          className="w-full max-w-[90vw] lg:max-w-[800px] bg-[var(--primary-yellow)] rounded-2xl px-4"
+          className="w-full max-w-[90vw] lg:max-w-3xl bg-[var(--primary-yellow)] rounded-2xl px-4"
         >
           <SwiperSlide>
             <img
