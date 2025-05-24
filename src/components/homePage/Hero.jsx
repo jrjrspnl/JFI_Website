@@ -1,6 +1,6 @@
 import React from "react";
-import bgHero from "../../assets/backgroundImages/bgHero.svg";
-import charMikMik from "../../assets/Characters/charMikMik.png";
+import bgHero from "../../assets/backgroundImages/bgHero.webp";
+import charMikMik from "../../assets/Characters/charMikMik.webp";
 
 const Hero = () => {
   return (

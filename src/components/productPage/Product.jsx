@@ -134,12 +134,12 @@ const Product = () => {
         {categoryTitles[activeCategory]}
       </h1>
       <div className="w-full flex justify-center text-black px-5">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-10  py-10 ">
+        <div className=" mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 lg:gap-10  py-10 ">
           {products[activeCategory].length > 0 ? (
             products[activeCategory].map((item) => (
               <div
                 key={item.name}
-                className="bg-white p-4 text-center shadow rounded-xl w-full   cursor-pointer
+                className="bg-white p-4 text-center shadow rounded-xl w-full xl:w-[320px] cursor-pointer
                 duration-300 hover:scale-105 relative "
               >
                 <img
